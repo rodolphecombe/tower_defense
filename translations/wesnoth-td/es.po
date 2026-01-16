@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-td\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-01-13 12:42\n"
-"PO-Revision-Date: 2026-01-13 13:05-0300\n"
+"POT-Creation-Date: 2026-01-16 12:01\n"
+"PO-Revision-Date: 2026-01-16 12:22-0300\n"
 "Last-Translator: Sebastián Lecchini <sebas38760@gmail.com>\n"
 "Language-Team: es\n"
 "Language: es\n"
@@ -11,60 +11,69 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. [multiplayer], id=tower_defense
-#: ./Tower_Defense/_main.cfg:5
-msgid "Tower Defense"
-msgstr "Defensa de Torres"
+#. [multiplayer], id=tower_defense_coop
+#: Tower_Defense/scenarios/coop.cfg:3
+msgid "Tower Defense (coop)"
+msgstr "Defensa de Torres (cooperativo)"
 
-#. [multiplayer], id=tower_defense
-#: ./Tower_Defense/_main.cfg:7
+#. [multiplayer], id=tower_defense_coop
+#: Tower_Defense/scenarios/coop.cfg:5
 msgid ""
-"Classical Tower Defense adapted to Wesnoth. Recruit units on hexes, they "
-"fight against waves of enemies, each enemy killed gives you gold, each "
-"unkilled enemy will attack you tower once. Try to have your tower to stand as"
-" long as possible, if possible until the end of the waves."
+"Classical Coop Tower Defense adapted to Wesnoth. Recruit units on hexes, "
+"they fight against waves of enemies, each enemy killed gives you gold, each "
+"unkilled enemy will attack you tower once. Try to have your crystal to stand "
+"as long as possible, if possible until the end of the waves."
 msgstr ""
-"Defensa de Torres clásico adaptado a Wesnoth. Recluta unidades en hexágonos, "
-"lucha contra oleadas de enemigos; cada enemigo derrotado te da oro, y cada "
-"enemigo que no sea eliminado atacará tu torre una vez. Intenta que tu torre "
-"resista el mayor tiempo posible, idealmente hasta el final de las oleadas."
+"Defensa de Torres Cooperativa clásica adaptada a Wesnoth. Recluta unidades "
+"en hexágonos, lucha contra oleadas de enemigos; cada enemigo derrotado te da "
+"oro, y cada enemigo que no sea eliminado atacará tu torre una vez. Intenta "
+"que tu torre resista el mayor tiempo posible, idealmente hasta el final de "
+"las oleadas."
 
 #. [side], type=Tower TD
-#: ./Tower_Defense/_main.cfg:23
-msgid "Player"
-msgstr "Jugador"
+#: Tower_Defense/scenarios/coop.cfg:17
+msgid "Player 1"
+msgstr "Jugador 1"
 
 #. [side]
-#. [unit_type], id=Tower TD, race=mechanical
-#: ./Tower_Defense/_main.cfg:46
-#: ./Tower_Defense/units/Tower.cfg:4
-msgid "Crystal"
-msgstr "Cristal"
+#: Tower_Defense/scenarios/coop.cfg:40
+msgid "Towers 1"
+msgstr "Torres 1"
+
+#. [side], type=Tower TD
+#: Tower_Defense/scenarios/coop.cfg:48
+msgid "Player 2"
+msgstr "Jugador 2"
 
 #. [side]
-#: ./Tower_Defense/_main.cfg:56
+#: Tower_Defense/scenarios/coop.cfg:72
+msgid "Towers 2"
+msgstr "Torres 2"
+
+#. [side]
+#: Tower_Defense/scenarios/coop.cfg:82 Tower_Defense/scenarios/solo.cfg:50
 msgid "Enemies"
 msgstr "Enemigos"
 
 #. [objective], condition=win
-#: ./Tower_Defense/_main.cfg:72
-#: ./Tower_Defense/_main.cfg:359
+#: Tower_Defense/scenarios/coop.cfg:403 Tower_Defense/scenarios/coop.cfg:824
+#: Tower_Defense/scenarios/solo.cfg:184 Tower_Defense/scenarios/solo.cfg:493
 msgid "Survive for as long as possible. Next wave in $wave_turn| turns."
-msgstr "Sobrevive el mayor tiempo posible. Próxima oleada en $wave_turn| turnos."
+msgstr ""
+"Sobrevive el mayor tiempo posible. Próxima oleada en $wave_turn| turnos."
 
 #. [objective], condition=lose
-#: ./Tower_Defense/_main.cfg:76
-#: ./Tower_Defense/_main.cfg:363
-msgid "Destruction of the crystal"
-msgstr "Destrucción del cristal"
+#: Tower_Defense/scenarios/coop.cfg:407 Tower_Defense/scenarios/coop.cfg:828
+msgid "Destruction of the crystals"
+msgstr "Destrucción de los cristales"
 
 #. [message], speaker=narrator
-#: ./Tower_Defense/_main.cfg:105
+#: Tower_Defense/scenarios/coop.cfg:436 Tower_Defense/scenarios/solo.cfg:217
 msgid "Welcome to this tower defense."
 msgstr "Bienvenido a este defensa de torres."
 
 #. [message], speaker=narrator
-#: ./Tower_Defense/_main.cfg:109
+#: Tower_Defense/scenarios/coop.cfg:440 Tower_Defense/scenarios/solo.cfg:221
 msgid ""
 "To place a tower, recruit it and move it to the wanted hex.\n"
 "It will then be transfered to the allied AI. It will return to its hex after "
@@ -75,21 +84,21 @@ msgstr ""
 "cada ataque."
 
 #. [message], speaker=narrator
-#: ./Tower_Defense/_main.cfg:114
+#: Tower_Defense/scenarios/coop.cfg:445 Tower_Defense/scenarios/solo.cfg:226
 msgid ""
 "You can change its advancement path at any time if you activated the option, "
 "even if it is now controlled by the AI."
 msgstr ""
-"Puedes cambiar su ruta de avance en cualquier momento si activaste la opción, "
-"incluso si ahora está controlada por la IA."
+"Puedes cambiar su ruta de avance en cualquier momento si activaste la "
+"opción, incluso si ahora está controlada por la IA."
 
 #. [message], speaker=narrator
-#: ./Tower_Defense/_main.cfg:118
+#: Tower_Defense/scenarios/coop.cfg:449 Tower_Defense/scenarios/solo.cfg:230
 msgid "You can move and sell towers with a right-click."
 msgstr "Puedes mover y vender torres con clic derecho."
 
 #. [message], speaker=narrator
-#: ./Tower_Defense/_main.cfg:122
+#: Tower_Defense/scenarios/coop.cfg:453 Tower_Defense/scenarios/solo.cfg:234
 msgid ""
 "Enemies will spawn every 10 turns. Each wave will have more enemies than the "
 "previous one."
@@ -98,31 +107,137 @@ msgstr ""
 "la anterior."
 
 #. [message], speaker=narrator
-#: ./Tower_Defense/_main.cfg:126
+#: Tower_Defense/scenarios/coop.cfg:457 Tower_Defense/scenarios/solo.cfg:238
 msgid "Each unit a tower kills will grant you gold."
 msgstr "Cada unidad eliminada por una torre te dará oro."
 
 #. [message], speaker=narrator
-#: ./Tower_Defense/_main.cfg:130
+#: Tower_Defense/scenarios/coop.cfg:461 Tower_Defense/scenarios/solo.cfg:242
 msgid "If your crystal is destroyed, you lose."
 msgstr "Si tu cristal es destruido, pierdes."
 
 #. [message], speaker=narrator
-#: ./Tower_Defense/_main.cfg:134
+#: Tower_Defense/scenarios/coop.cfg:465 Tower_Defense/scenarios/solo.cfg:246
 msgid "In which difficulty do you want to play?"
 msgstr "¿En qué dificultad quieres jugar?"
 
 #. [option]
-#: ./Tower_Defense/_main.cfg:136
+#: Tower_Defense/scenarios/coop.cfg:467
 msgid ""
-"Easy: 80 starting gold, 4 gold per kill, 10 waves, 60 more gold for the enemy"
-" each wave."
+"Easy: 50 starting gold each, 4 gold per kill, 10 waves, 60 more gold for the "
+"enemy each wave."
+msgstr ""
+"Fácil: 50 de oro inicial para cada uno, 4 de oro por muerte, 10 oleadas, 60 "
+"de oro adicional para el enemigo en cada oleada."
+
+#. [option]
+#: Tower_Defense/scenarios/coop.cfg:479
+msgid ""
+"Normal: 40 starting gold each, 4 gold per kill, 15 waves, 80 more gold for "
+"the enemy each wave."
+msgstr ""
+"Normal: 40 de oro inicial para cada uno, 4 de oro por muerte, 15 oleadas, 80 "
+"de oro adicional para el enemigo en cada oleada."
+
+#. [option]
+#: Tower_Defense/scenarios/coop.cfg:491
+msgid ""
+"Hard: 40 starting gold each, 3 gold per kill, 20 waves, 100 more gold for "
+"the enemy each wave."
+msgstr ""
+"Difícil: 40 de oro inicial para cada uno, 3 de oro por muerte, 20 oleadas, "
+"100 de oro adicional para el enemigo en cada oleada."
+
+#. [set_menu_item], id=1move
+#. [set_menu_item], id=2move
+#: Tower_Defense/scenarios/coop.cfg:508 Tower_Defense/scenarios/coop.cfg:559
+#: Tower_Defense/scenarios/solo.cfg:289
+msgid "Move the tower (10 gold)"
+msgstr "Mover la torre (10 de oro)"
+
+#. [set_menu_item], id=1sell
+#. [set_menu_item], id=2sell
+#: Tower_Defense/scenarios/coop.cfg:612 Tower_Defense/scenarios/coop.cfg:649
+#: Tower_Defense/scenarios/solo.cfg:338
+msgid "Sell the tower"
+msgstr "Vender la torre"
+
+#. [floating_text]
+#: Tower_Defense/scenarios/coop.cfg:638 Tower_Defense/scenarios/coop.cfg:675
+#: Tower_Defense/scenarios/solo.cfg:360
+msgid "<span color='yellow'>+$($unit_to_sell.cost/2) gold</span>"
+msgstr "<span color='yellow'>+$($unit_to_sell.cost/2) de oro</span>"
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/coop.cfg:798 Tower_Defense/scenarios/solo.cfg:467
+msgid "Final wave starts"
+msgstr "Comienza la oleada final"
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/coop.cfg:804 Tower_Defense/scenarios/solo.cfg:473
+msgid "Wave $wave_number starts"
+msgstr "Comienza la oleada $wave_number"
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/coop.cfg:848 Tower_Defense/scenarios/solo.cfg:517
+msgid "Congratulations! You survived to all $max_waves waves!"
+msgstr "¡Felicidades! ¡Has superado todas las $max_waves oleadas!"
+
+#. [floating_text]
+#: Tower_Defense/scenarios/coop.cfg:908 Tower_Defense/scenarios/solo.cfg:571
+msgid "<span color='yellow'>+$kill_gold gold</span>"
+msgstr "<span color='yellow'>+$kill_gold de oro</span>"
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/coop.cfg:916 Tower_Defense/scenarios/solo.cfg:579
+msgid "You survived $($wave_number-1) waves. Do better next time."
+msgstr ""
+"Sobreviviste $($wave_number-1) oleadas. Intenta hacerlo mejor la próxima vez."
+
+#. [multiplayer], id=tower_defense
+#: Tower_Defense/scenarios/solo.cfg:3
+msgid "Tower Defense"
+msgstr "Defensa de Torres"
+
+#. [multiplayer], id=tower_defense
+#: Tower_Defense/scenarios/solo.cfg:5
+msgid ""
+"Classical Tower Defense adapted to Wesnoth. Recruit units on hexes, they "
+"fight against waves of enemies, each enemy killed gives you gold, each "
+"unkilled enemy will attack you tower once. Try to have your crystal to stand "
+"as long as possible, if possible until the end of the waves."
+msgstr ""
+"Defensa de Torres clásico adaptado a Wesnoth. Recluta unidades en hexágonos, "
+"lucha contra oleadas de enemigos; cada enemigo derrotado te da oro, y cada "
+"enemigo que no sea eliminado atacará tu torre una vez. Intenta que tu torre "
+"resista el mayor tiempo posible, idealmente hasta el final de las oleadas."
+
+#. [side], type=Tower TD
+#: Tower_Defense/scenarios/solo.cfg:17
+msgid "Player"
+msgstr "Jugador"
+
+#. [side]
+#: Tower_Defense/scenarios/solo.cfg:40
+msgid "Towers"
+msgstr "Torres"
+
+#. [objective], condition=lose
+#: Tower_Defense/scenarios/solo.cfg:188 Tower_Defense/scenarios/solo.cfg:497
+msgid "Destruction of the crystal"
+msgstr "Destrucción del cristal"
+
+#. [option]
+#: Tower_Defense/scenarios/solo.cfg:248
+msgid ""
+"Easy: 80 starting gold, 4 gold per kill, 10 waves, 60 more gold for the "
+"enemy each wave."
 msgstr ""
 "Fácil: 80 de oro inicial, 4 de oro por muerte, 10 oleadas, 60 de oro "
 "adicional para el enemigo en cada oleada."
 
 #. [option]
-#: ./Tower_Defense/_main.cfg:148
+#: Tower_Defense/scenarios/solo.cfg:260
 msgid ""
 "Normal: 60 starting gold, 4 gold per kill, 15 waves, 80 more gold for the "
 "enemy each wave."
@@ -131,7 +246,7 @@ msgstr ""
 "adicional para el enemigo en cada oleada."
 
 #. [option]
-#: ./Tower_Defense/_main.cfg:160
+#: Tower_Defense/scenarios/solo.cfg:272
 msgid ""
 "Hard: 60 starting gold, 3 gold per kill, 20 waves, 100 more gold for the "
 "enemy each wave."
@@ -139,37 +254,5 @@ msgstr ""
 "Difícil: 60 de oro inicial, 3 de oro por muerte, 20 oleadas, 100 de oro "
 "adicional para el enemigo en cada oleada."
 
-#. [set_menu_item], id=1move
-#: ./Tower_Defense/_main.cfg:177
-msgid "Move the tower"
-msgstr "Mover la torre"
-
-#. [set_menu_item], id=1sell
-#: ./Tower_Defense/_main.cfg:209
-msgid "Sell the tower"
-msgstr "Vender la torre"
-
-#. [floating_text]
-#: ./Tower_Defense/_main.cfg:231
-msgid "<span color='yellow'>+$($unit_to_sell.cost/2) gold</span>"
-msgstr "<span color='yellow'>+$($unit_to_sell.cost/2) de oro</span>"
-
-#. [message], speaker=narrator
-#: ./Tower_Defense/_main.cfg:332
-msgid "Final wave starts"
-msgstr "Comienza la oleada final"
-
-#. [message], speaker=narrator
-#: ./Tower_Defense/_main.cfg:338
-msgid "Wave $wave_number starts"
-msgstr "Comienza la oleada $wave_number"
-
-#. [floating_text]
-#: ./Tower_Defense/_main.cfg:437
-msgid "<span color='yellow'>+$kill_gold gold</span>"
-msgstr "<span color='yellow'>+$kill_gold de oro</span>"
-
-#. [message], speaker=narrator
-#: ./Tower_Defense/_main.cfg:445
-msgid "You survived $($wave_number-1) waves. Do better next time."
-msgstr "Sobreviviste $($wave_number-1) oleadas. Intenta hacerlo mejor la próxima vez."
+#~ msgid "Crystal"
+#~ msgstr "Cristal"
