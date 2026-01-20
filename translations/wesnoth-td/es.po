@@ -254,5 +254,5 @@ msgstr ""
 "Difícil: 60 de oro inicial, 3 de oro por muerte, 20 oleadas, 100 de oro "
 "adicional para el enemigo en cada oleada."
 
-#~ msgid "Crystal"
-#~ msgstr "Cristal"
+msgid "Crystal"
+msgstr "Cristal"

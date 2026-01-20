@@ -14,7 +14,7 @@ msgstr ""
 #. [multiplayer], id=tower_defense_coop
 #: Tower_Defense/scenarios/coop.cfg:3
 msgid "Tower Defense (coop)"
-msgstr "Tower Defense (cooperativo)"
+msgstr "Tower Defense (coop)"
 
 #. [multiplayer], id=tower_defense_coop
 #: Tower_Defense/scenarios/coop.cfg:5
@@ -79,7 +79,7 @@ msgid ""
 "It will then be transfered to the allied AI. It will return to its hex after "
 "each attack."
 msgstr ""
-"Pour placer une tour, recrute la et déplace la vers la case voulue.\n"
+"Pour placer une tour, recrute-la et déplace-la vers la case voulue.\n"
 "Elle sera ensuite transférée à l'IA alliée. Elle retournera sur sa case "
 "après chaque attaque."
 
@@ -243,7 +243,7 @@ msgid ""
 "Normal: 60 starting gold, 4 gold per kill, 15 waves, 80 more gold for the "
 "enemy each wave."
 msgstr ""
-"Normal : 40 d'or de départ chacun, 4 d'or par ennemi tué, 15 vagues, 80 "
+"Normal : 60 d'or de départ chacun, 4 d'or par ennemi tué, 15 vagues, 80 "
 "d'or de plus pour chaque vague ennemie."
 
 #. [option]
@@ -255,5 +255,5 @@ msgstr ""
 "Difficile : 40 d'or de départ chacun, 3 d'or par ennemi tué, 20 vagues, 100 "
 "d'or en plus pour chaque vague ennemie."
 
-#~ msgid "Crystal"
-#~ msgstr "Cristal"
+msgid "Crystal"
+msgstr "Cristal"
