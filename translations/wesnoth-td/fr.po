@@ -181,7 +181,7 @@ msgstr "Début de la vague $wave_number"
 #. [message], speaker=narrator
 #: Tower_Defense/scenarios/coop.cfg:848 Tower_Defense/scenarios/solo.cfg:517
 msgid "Congratulations! You survived to all $max_waves waves!"
-msgstr "Félicitations! Vous avez survécu à $max_waves vagues!"
+msgstr "Félicitations! Vous avez survécu aux $max_waves vagues!"
 
 #. [floating_text]
 #: Tower_Defense/scenarios/coop.cfg:908 Tower_Defense/scenarios/solo.cfg:571
