@@ -12,3 +12,7 @@ Fix "Move the Tower"
 3.0
 Add coop mode
 
+4.0
+Enemies now get stronger each wave
+Tower Defense parameters are now adjustable in the lobby
+Selling a tower now asks for confirmation
