@@ -2,14 +2,335 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-td\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-01-16 12:01\n"
-"PO-Revision-Date: 2026-01-21 21:18-0300\n"
+"POT-Creation-Date: 2026-01-23 21:17\n"
+"PO-Revision-Date: 2026-01-23 21:17-0300\n"
 "Last-Translator: Rodolphe Combe-Colas\n"
 "Language-Team: fr\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#. [multiplayer], id=tower_defense_afterlife
+#: Tower_Defense/scenarios/afterlife.cfg:3
+msgid "Tower Defense Afterlife"
+msgstr "Tower Defense Afterlife"
+
+#. [multiplayer], id=tower_defense_afterlife
+#: Tower_Defense/scenarios/afterlife.cfg:5
+msgid ""
+"Versus Tower Defense adapted to Wesnoth. Recruit units, place them on hexes, "
+"they fight against waves of your opponent's towers, each enemy unit killed "
+"gives you gold, each unkilled enemy will attack your crystal once. Try to "
+"have your crystal to stand longer than the one of your opponent.\n"
+"\n"
+"Recommanded parameters:\n"
+"    - Long: Starting Gold: 100, Kill Gold: 4\n"
+"    - Normal: Starting Gold: 80, Kill Gold: 3\n"
+"    - Quick: Starting Gold: 60, Kill Gold: 2"
+msgstr ""
+"Tower Defense en duel adapté à Wesnoth. Recrutez des unités, "
+"placez les sur les cases, elles se battent contre des vagues de tours de"
+" votre adversaire, chaque ennemi tué rapporte de l'or, chaque ennemi"
+" non-tué attaquera votre cristal une fois. Essayez de faire survivre "
+"votre cristal plus longtemps que celui de votre adversaire.\n"
+"\n"
+"Paramètres recommandés\n"
+"    - Long : Or de départ : 100, Or par tué : 4\n"
+"    - Normal: Or de départ : 80, Or par tué : 3\n"
+"    - Rapide: Or de départ : 60, Or par tué : 2"
+
+#. [slider], id=starting_gold
+#: Tower_Defense/scenarios/afterlife.cfg:21
+#: Tower_Defense/scenarios/afterlife_2.cfg:21
+#: Tower_Defense/scenarios/coop.cfg:21 Tower_Defense/scenarios/solo.cfg:21
+#: Tower_Defense/scenarios/versus.cfg:21
+msgid "Starting Gold"
+msgstr "Or de départ"
+
+#. [slider], id=kill_gold
+#: Tower_Defense/scenarios/afterlife.cfg:28
+#: Tower_Defense/scenarios/afterlife_2.cfg:28
+#: Tower_Defense/scenarios/coop.cfg:28 Tower_Defense/scenarios/solo.cfg:28
+#: Tower_Defense/scenarios/versus.cfg:28
+msgid "Kill gold"
+msgstr "Or par tué"
+
+#. [slider], id=kill_gold
+#: Tower_Defense/scenarios/afterlife.cfg:29
+#: Tower_Defense/scenarios/afterlife_2.cfg:29
+#: Tower_Defense/scenarios/coop.cfg:29 Tower_Defense/scenarios/solo.cfg:29
+#: Tower_Defense/scenarios/versus.cfg:29
+msgid "Amount of gold you receive for each enemy killed"
+msgstr "Quantité d'or reçue pour chaque ennemi tué"
+
+#. [side], type=Tower TD
+#: Tower_Defense/scenarios/afterlife.cfg:40
+#: Tower_Defense/scenarios/afterlife_2.cfg:48
+#: Tower_Defense/scenarios/coop.cfg:63 Tower_Defense/scenarios/versus.cfg:56
+msgid "Player 1"
+msgstr "Joueur 1"
+
+#. [side]
+#: Tower_Defense/scenarios/afterlife.cfg:63
+#: Tower_Defense/scenarios/afterlife_2.cfg:71
+#: Tower_Defense/scenarios/coop.cfg:86 Tower_Defense/scenarios/versus.cfg:79
+msgid "Towers 1"
+msgstr "Tours 1"
+
+#. [side], type=Tower TD
+#: Tower_Defense/scenarios/afterlife.cfg:71
+#: Tower_Defense/scenarios/afterlife_2.cfg:79
+#: Tower_Defense/scenarios/coop.cfg:94 Tower_Defense/scenarios/versus.cfg:87
+msgid "Player 2"
+msgstr "Joueur 2"
+
+#. [side]
+#: Tower_Defense/scenarios/afterlife.cfg:95
+#: Tower_Defense/scenarios/afterlife_2.cfg:103
+#: Tower_Defense/scenarios/coop.cfg:118 Tower_Defense/scenarios/versus.cfg:111
+msgid "Towers 2"
+msgstr "Tours 2"
+
+#. [side]
+#: Tower_Defense/scenarios/afterlife.cfg:106
+#: Tower_Defense/scenarios/afterlife_2.cfg:114
+#: Tower_Defense/scenarios/versus.cfg:121
+msgid "Enemies 1"
+msgstr "Ennemi 1"
+
+#. [side]
+#: Tower_Defense/scenarios/afterlife.cfg:119
+#: Tower_Defense/scenarios/afterlife_2.cfg:127
+#: Tower_Defense/scenarios/versus.cfg:134
+msgid "Enemies 2"
+msgstr "Ennemi 2"
+
+#. [objective], condition=win
+#: Tower_Defense/scenarios/afterlife.cfg:280
+#: Tower_Defense/scenarios/afterlife.cfg:719
+#: Tower_Defense/scenarios/afterlife_2.cfg:288
+#: Tower_Defense/scenarios/afterlife_2.cfg:777
+#: Tower_Defense/scenarios/versus.cfg:324
+#: Tower_Defense/scenarios/versus.cfg:738
+msgid "Survive longer than your opponent. Next wave in $wave_turn| turns."
+msgstr ""
+"Survivre plus longtemps que votre adversaire. Prochaine vague dans $wave_turn| tours."
+
+#. [objective], condition=lose
+#: Tower_Defense/scenarios/afterlife.cfg:284
+#: Tower_Defense/scenarios/afterlife.cfg:723
+#: Tower_Defense/scenarios/afterlife_2.cfg:292
+#: Tower_Defense/scenarios/afterlife_2.cfg:781
+#: Tower_Defense/scenarios/solo.cfg:239 Tower_Defense/scenarios/solo.cfg:524
+#: Tower_Defense/scenarios/versus.cfg:328
+#: Tower_Defense/scenarios/versus.cfg:742
+msgid "Destruction of the crystal"
+msgstr "Destruction du cristal"
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/afterlife.cfg:326
+#: Tower_Defense/scenarios/afterlife_2.cfg:334
+#: Tower_Defense/scenarios/coop.cfg:487 Tower_Defense/scenarios/solo.cfg:268
+#: Tower_Defense/scenarios/versus.cfg:370
+msgid "Welcome to this tower defense."
+msgstr "Bienvenue dans ce Tower Defense."
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/afterlife.cfg:330
+#: Tower_Defense/scenarios/afterlife_2.cfg:338
+#: Tower_Defense/scenarios/coop.cfg:491 Tower_Defense/scenarios/solo.cfg:272
+#: Tower_Defense/scenarios/versus.cfg:374
+msgid ""
+"To place a tower, recruit it and move it to the wanted hex.\n"
+"It will then be transfered to the allied AI. It will return to its hex after "
+"each attack."
+msgstr ""
+"Pour placer une tour, recrutez-la et déplacez-la vers la case voulue.\n"
+"Elle sera ensuite transférée à l'IA alliée. Elle retournera sur sa case "
+"après chaque attaque."
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/afterlife.cfg:335
+#: Tower_Defense/scenarios/afterlife_2.cfg:343
+#: Tower_Defense/scenarios/coop.cfg:496 Tower_Defense/scenarios/solo.cfg:277
+#: Tower_Defense/scenarios/versus.cfg:379
+msgid ""
+"You can change its advancement path at any time if you activated the option, "
+"even if it is now controlled by the AI."
+msgstr ""
+"Vous pouvez changer son avancement à tout moment si vous avez "
+"activé l'option, quand bien même elle est contrôlée par l'IA."
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/afterlife.cfg:339
+#: Tower_Defense/scenarios/afterlife_2.cfg:347
+#: Tower_Defense/scenarios/coop.cfg:500 Tower_Defense/scenarios/solo.cfg:281
+#: Tower_Defense/scenarios/versus.cfg:383
+msgid "You can move and sell towers with a right-click."
+msgstr "Vous pouvez déplacer et vendre les tours avec un clic-droit."
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/afterlife.cfg:343
+#: Tower_Defense/scenarios/versus.cfg:387
+msgid "Enemies will spawn every 10 turns."
+msgstr "Des ennemis apparaîtront tous les 10 tours."
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/afterlife.cfg:347
+msgid ""
+"Each unit a tower kills will grant you gold. The killed unit will also be "
+"placed on your opponent's map"
+msgstr ""
+"Chaque unité qu'une tour tue vous rapporte de l'or. L'unité tuée "
+"sera également placée sur la carte de votre adversaire."
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/afterlife.cfg:351
+#: Tower_Defense/scenarios/afterlife_2.cfg:359
+#: Tower_Defense/scenarios/solo.cfg:293 Tower_Defense/scenarios/versus.cfg:395
+msgid "If your crystal is destroyed, you lose."
+msgstr "Si votre cristal est détruit, vous avez perdu."
+
+#. [set_menu_item], id=1move
+#. [set_menu_item], id=2move
+#: Tower_Defense/scenarios/afterlife.cfg:356
+#: Tower_Defense/scenarios/afterlife.cfg:407
+#: Tower_Defense/scenarios/afterlife_2.cfg:364
+#: Tower_Defense/scenarios/afterlife_2.cfg:415
+#: Tower_Defense/scenarios/coop.cfg:518 Tower_Defense/scenarios/coop.cfg:569
+#: Tower_Defense/scenarios/solo.cfg:299 Tower_Defense/scenarios/versus.cfg:400
+#: Tower_Defense/scenarios/versus.cfg:451
+msgid "Move the tower (10 gold)"
+msgstr "Déplacer la tour (10 d'or)"
+
+#. [set_menu_item], id=1sell
+#. [set_menu_item], id=2sell
+#: Tower_Defense/scenarios/afterlife.cfg:462
+#: Tower_Defense/scenarios/afterlife.cfg:516
+#: Tower_Defense/scenarios/afterlife_2.cfg:470
+#: Tower_Defense/scenarios/afterlife_2.cfg:524
+#: Tower_Defense/scenarios/coop.cfg:622 Tower_Defense/scenarios/coop.cfg:676
+#: Tower_Defense/scenarios/solo.cfg:348 Tower_Defense/scenarios/versus.cfg:506
+#: Tower_Defense/scenarios/versus.cfg:560
+msgid "Sell the tower"
+msgstr "Vendre la tour"
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/afterlife.cfg:484
+#: Tower_Defense/scenarios/afterlife.cfg:538
+#: Tower_Defense/scenarios/afterlife_2.cfg:492
+#: Tower_Defense/scenarios/afterlife_2.cfg:546
+#: Tower_Defense/scenarios/coop.cfg:644 Tower_Defense/scenarios/coop.cfg:698
+#: Tower_Defense/scenarios/solo.cfg:366 Tower_Defense/scenarios/versus.cfg:528
+#: Tower_Defense/scenarios/versus.cfg:582
+msgid "The tower will be sold for $($unit_to_sell.cost/2) gold. Do you confirm?"
+msgstr "La tour sera vendue pour $($unit_to_sell.cost/2) d'or. Confirmer ?"
+
+#. [option]
+#: Tower_Defense/scenarios/afterlife.cfg:486
+#: Tower_Defense/scenarios/afterlife.cfg:540
+#: Tower_Defense/scenarios/afterlife_2.cfg:494
+#: Tower_Defense/scenarios/afterlife_2.cfg:548
+#: Tower_Defense/scenarios/coop.cfg:646 Tower_Defense/scenarios/coop.cfg:700
+#: Tower_Defense/scenarios/solo.cfg:368 Tower_Defense/scenarios/versus.cfg:530
+#: Tower_Defense/scenarios/versus.cfg:584
+msgid "Yes"
+msgstr "Oui"
+
+#. [floating_text]
+#: Tower_Defense/scenarios/afterlife.cfg:497
+#: Tower_Defense/scenarios/afterlife.cfg:551
+#: Tower_Defense/scenarios/afterlife_2.cfg:505
+#: Tower_Defense/scenarios/afterlife_2.cfg:559
+#: Tower_Defense/scenarios/coop.cfg:657 Tower_Defense/scenarios/coop.cfg:711
+#: Tower_Defense/scenarios/solo.cfg:379 Tower_Defense/scenarios/versus.cfg:541
+#: Tower_Defense/scenarios/versus.cfg:595
+msgid "<span color='yellow'>+$($unit_to_sell.cost/2) gold</span>"
+msgstr "<span color='yellow'>+$($unit_to_sell.cost/2) d'or</span>"
+
+#. [option]
+#: Tower_Defense/scenarios/afterlife.cfg:507
+#: Tower_Defense/scenarios/afterlife.cfg:561
+#: Tower_Defense/scenarios/afterlife_2.cfg:515
+#: Tower_Defense/scenarios/afterlife_2.cfg:569
+#: Tower_Defense/scenarios/coop.cfg:667 Tower_Defense/scenarios/coop.cfg:721
+#: Tower_Defense/scenarios/solo.cfg:389 Tower_Defense/scenarios/versus.cfg:551
+#: Tower_Defense/scenarios/versus.cfg:605
+msgid "No"
+msgstr "Non"
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/afterlife.cfg:672
+#: Tower_Defense/scenarios/afterlife_2.cfg:680
+#: Tower_Defense/scenarios/coop.cfg:848 Tower_Defense/scenarios/solo.cfg:500
+#: Tower_Defense/scenarios/versus.cfg:716
+msgid "Wave $wave_number starts"
+msgstr "Début de la vague $wave_number"
+
+#. [floating_text]
+#: Tower_Defense/scenarios/afterlife.cfg:769
+#: Tower_Defense/scenarios/afterlife_2.cfg:852
+#: Tower_Defense/scenarios/coop.cfg:968 Tower_Defense/scenarios/solo.cfg:613
+#: Tower_Defense/scenarios/versus.cfg:842
+msgid "<span color='yellow'>+$kill_gold gold</span>"
+msgstr "<span color='yellow'>+$kill_gold d'or</span>"
+
+#. [multiplayer], id=tower_defense_afterlife_2
+#: Tower_Defense/scenarios/afterlife_2.cfg:3
+msgid "Tower Defense Afterlife (variant)"
+msgstr "Tower Defense Afterlife (variante)"
+
+#. [multiplayer], id=tower_defense_afterlife_2
+#: Tower_Defense/scenarios/afterlife_2.cfg:5
+msgid ""
+"Versus Tower Defense adapted to Wesnoth. Recruit units, place them on hexes, "
+"they fight against waves of your opponent's towers, each enemy unit killed "
+"gives you gold, each unkilled enemy will attack your crystal once. Try to "
+"have your crystal to stand longer as the one of your opponent.\n"
+"\n"
+"Recommanded parameters:\n"
+"    - Long: Starting Gold: 100, Kill Gold: 4, Enemy gold: 50\n"
+"    - Normal: Starting Gold: 80, Kill Gold: 3, Enemy Gold: 60\n"
+"    - Quick: Starting Gold: 60, Kill Gold: 2, Enemy Gold: 80"
+msgstr ""
+"Tower Defense en duel adapté à Wesnoth. Recrutez des unités, "
+"placez les sur les cases, elles se battent contre des vagues de tours de"
+" votre adversaire, chaque ennemi tué rapporte de l'or, chaque ennemi"
+" non-tué attaquera votre cristal une fois. Essayez de faire survivre "
+"votre cristal plus longtemps que celui de votre adversaire.\n"
+"\n"
+"Paramètres recommandés\n"
+"    - Long : Or de départ : 100, Or par tué : 4, Or ennemi : 50\n"
+"    - Normal: Or de départ : 80, Or par tué : 3, Or ennemi : 60\n"
+"    - Rapide: Or de départ : 60, Or par tué : 2, Or ennemi : 80"
+
+#. [slider], id=gold_increase
+#: Tower_Defense/scenarios/afterlife_2.cfg:36
+#: Tower_Defense/scenarios/coop.cfg:43 Tower_Defense/scenarios/solo.cfg:43
+msgid "Gold Increase"
+msgstr "Incrément d'or"
+
+#. [slider], id=gold_increase
+#: Tower_Defense/scenarios/afterlife_2.cfg:37
+#: Tower_Defense/scenarios/coop.cfg:44 Tower_Defense/scenarios/solo.cfg:44
+msgid "Additional amount of gold the enemy leader gets each wave"
+msgstr "Quantité d'or additionnelle que l'ennemi reçoit à chaque vague"
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/afterlife_2.cfg:351
+msgid ""
+"Enemies will spawn every 10 turns.  Each wave will have more enemies than "
+"the previous one."
+msgstr ""
+"Des ennemis apparaîtront tous les 10 tours. Chaque vague aura plus d'ennemis "
+"que la précédente."
+
+#. [message], speaker=narrator
+#: Tower_Defense/scenarios/afterlife_2.cfg:355
+#: Tower_Defense/scenarios/coop.cfg:508 Tower_Defense/scenarios/solo.cfg:289
+msgid "Each unit a tower kills will grant you gold."
+msgstr "Chaque unité qu'une tour tue vous rapporte de l'or."
 
 #. [multiplayer], id=tower_defense_coop
 #: Tower_Defense/scenarios/coop.cfg:3
@@ -33,10 +354,10 @@ msgid ""
 "    - Difficulty: Starting Gold: 40, Kill Gold: 2 , Number of waves: 10, "
 "Gold Increase: 80, XP increase: 10"
 msgstr ""
-"Tower Defense classique en mode coopératif adapté à Wesnoth. Recrute"
-"des unités, place les sur les cases, elles se battent contre des vagues"
-"d'ennemis, chaque ennemi tué rapporte de l'or, chaque ennemi non-tué"
-"attaquera ton cristal une fois. Essaye de faire survivre ton cristal"
+"Tower Defense classique en mode coopératif adapté à Wesnoth. Recrutez"
+" des unités, placez les sur les cases, elles se battent contre des vagues "
+"d'ennemis, chaque ennemi tué rapporte de l'or, chaque ennemi non-tué "
+"attaquera votre cristal une fois. Essaye de faire survivre votre cristal "
 "le plus longtemps possible, si possible jusqu'à la fin des vagues.\n"
 "\n"
 "Paramètres recommandés :\n"
@@ -47,69 +368,26 @@ msgstr ""
 "    - Difficile : Or de départ : 40, Or par tué : 2, Nombre de vagues : 10, "
 "Incrément d'or : 80, Incrément d'XP : 10"
 
-#. [slider], id=starting_gold
-#: Tower_Defense/scenarios/coop.cfg:21 Tower_Defense/scenarios/solo.cfg:21
-msgid "Starting Gold"
-msgstr "Or de départ"
-
-#. [slider], id=kill_gold
-#: Tower_Defense/scenarios/coop.cfg:28 Tower_Defense/scenarios/solo.cfg:28
-msgid "Kill gold"
-msgstr "Or par tué"
-
-#. [slider], id=kill_gold
-#: Tower_Defense/scenarios/coop.cfg:29 Tower_Defense/scenarios/solo.cfg:29
-msgid "Amount of gold you receive for each enemy killed"
-msgstr "Quantité d'or reçu pour chaque ennemi tué"
-
 #. [slider], id=max_waves
 #: Tower_Defense/scenarios/coop.cfg:36 Tower_Defense/scenarios/solo.cfg:36
 msgid "Number of waves"
 msgstr "Nombre de vagues"
 
-#. [slider], id=gold_increase
-#: Tower_Defense/scenarios/coop.cfg:43 Tower_Defense/scenarios/solo.cfg:43
-msgid "Gold Increase"
-msgstr "Incrément d'or"
-
-#. [slider], id=gold_increase
-#: Tower_Defense/scenarios/coop.cfg:44 Tower_Defense/scenarios/solo.cfg:44
-msgid "Additional amount of gold the enemy leader gets each wave"
-msgstr "Quantité d'or additionnelle que l'ennemi reçoit à chaque vague"
-
 #. [slider], id=XP_increase
 #: Tower_Defense/scenarios/coop.cfg:51 Tower_Defense/scenarios/solo.cfg:51
+#: Tower_Defense/scenarios/versus.cfg:44
 msgid "XP Increase"
-msgstr "Increment d'XP"
+msgstr "Incrément d'XP"
 
 #. [slider], id=XP_increase
 #: Tower_Defense/scenarios/coop.cfg:52 Tower_Defense/scenarios/solo.cfg:52
+#: Tower_Defense/scenarios/versus.cfg:45
 msgid "Additional amount of XP the enemy units gets each wave"
 msgstr ""
 "Quantité d'XP additionnel que les unités ennemies reçoivent à chaque vague"
 
-#. [side], type=Tower TD
-#: Tower_Defense/scenarios/coop.cfg:17
-msgid "Player 1"
-msgstr "Joueur 1"
-
 #. [side]
-#: Tower_Defense/scenarios/coop.cfg:40
-msgid "Towers 1"
-msgstr "Tours 1"
-
-#. [side], type=Tower TD
-#: Tower_Defense/scenarios/coop.cfg:48
-msgid "Player 2"
-msgstr "Joueur 2"
-
-#. [side]
-#: Tower_Defense/scenarios/coop.cfg:72
-msgid "Towers 2"
-msgstr "Tours 2"
-
-#. [side]
-#: Tower_Defense/scenarios/coop.cfg:82 Tower_Defense/scenarios/solo.cfg:50
+#: Tower_Defense/scenarios/coop.cfg:128 Tower_Defense/scenarios/solo.cfg:96
 msgid "Enemies"
 msgstr "Ennemis"
 
@@ -121,39 +399,9 @@ msgstr ""
 "Survivez aussi longtemps que possible. Prochaine vague dans $wave_turn| tours."
 
 #. [objective], condition=lose
-#: Tower_Defense/scenarios/coop.cfg:407 Tower_Defense/scenarios/coop.cfg:828
+#: Tower_Defense/scenarios/coop.cfg:458 Tower_Defense/scenarios/coop.cfg:872
 msgid "Destruction of the crystals"
 msgstr "Destruction des cristaux"
-
-#. [message], speaker=narrator
-#: Tower_Defense/scenarios/coop.cfg:436 Tower_Defense/scenarios/solo.cfg:217
-msgid "Welcome to this tower defense."
-msgstr "Bienvenue dans ce Tower Defense."
-
-#. [message], speaker=narrator
-#: Tower_Defense/scenarios/coop.cfg:491 Tower_Defense/scenarios/solo.cfg:272
-msgid ""
-"To place a tower, recruit it and move it to the wanted hex.\n"
-"It will then be transfered to the allied AI. It will return to its hex after "
-"each attack."
-msgstr ""
-"Pour placer une tour, recrutez-la et déplacez-la vers la case voulue.\n"
-"Elle sera ensuite transférée à l'IA alliée. Elle retournera sur sa case "
-"après chaque attaque."
-
-#. [message], speaker=narrator
-#: Tower_Defense/scenarios/coop.cfg:496 Tower_Defense/scenarios/solo.cfg:277
-msgid ""
-"You can change its advancement path at any time if you activated the option, "
-"even if it is now controlled by the AI."
-msgstr ""
-"Vous pouvez changer la façon dont elle évolue à tout moment si vous avez "
-"activé l'option, quand bien même elle est contrôlée par l'IA."
-
-#. [message], speaker=narrator
-#: Tower_Defense/scenarios/coop.cfg:500 Tower_Defense/scenarios/solo.cfg:281
-msgid "You can move and sell towers with a right-click."
-msgstr "Vous pouvez déplacer et vendre les tours avec un clic-droit."
 
 #. [message], speaker=narrator
 #: Tower_Defense/scenarios/coop.cfg:504 Tower_Defense/scenarios/solo.cfg:285
@@ -165,34 +413,9 @@ msgstr ""
 "que la précédente."
 
 #. [message], speaker=narrator
-#: Tower_Defense/scenarios/coop.cfg:508 Tower_Defense/scenarios/solo.cfg:289
-msgid "Each unit a tower kills will grant you gold."
-msgstr "Chaque unité qu'une tour tue vous rapporte de l'or."
-
-#. [message], speaker=narrator
 #: Tower_Defense/scenarios/coop.cfg:512
 msgid "If your crystals are destroyed, you lose."
 msgstr "Si vos cristaux sont détruits, vous avez perdu."
-
-#. [set_menu_item], id=1move
-#. [set_menu_item], id=2move
-#: Tower_Defense/scenarios/coop.cfg:518 Tower_Defense/scenarios/coop.cfg:569
-#: Tower_Defense/scenarios/solo.cfg:299
-msgid "Move the tower (10 gold)"
-msgstr "Déplacer la tour (10 d'or)"
-
-#. [set_menu_item], id=1sell
-#. [set_menu_item], id=2sell
-#: Tower_Defense/scenarios/coop.cfg:622 Tower_Defense/scenarios/coop.cfg:676
-#: Tower_Defense/scenarios/solo.cfg:348
-msgid "Sell the tower"
-msgstr "Vendre la tour"
-
-#. [floating_text]
-#: Tower_Defense/scenarios/coop.cfg:657 Tower_Defense/scenarios/coop.cfg:711
-#: Tower_Defense/scenarios/solo.cfg:379
-msgid "<span color='yellow'>+$($unit_to_sell.cost/2) gold</span>"
-msgstr "<span color='yellow'>+$($unit_to_sell.cost/2) d'or</span>"
 
 #. [message], speaker=narrator
 #: Tower_Defense/scenarios/coop.cfg:842 Tower_Defense/scenarios/solo.cfg:494
@@ -200,19 +423,9 @@ msgid "Final wave starts"
 msgstr "Début de la dernière vague"
 
 #. [message], speaker=narrator
-#: Tower_Defense/scenarios/coop.cfg:848 Tower_Defense/scenarios/solo.cfg:500
-msgid "Wave $wave_number starts"
-msgstr "Début de la vague $wave_number"
-
-#. [message], speaker=narrator
 #: Tower_Defense/scenarios/coop.cfg:892 Tower_Defense/scenarios/solo.cfg:544
 msgid "Congratulations! You survived to all $max_waves waves!"
 msgstr "Félicitations! Vous avez survécu aux $max_waves vagues!"
-
-#. [floating_text]
-#: Tower_Defense/scenarios/coop.cfg:968 Tower_Defense/scenarios/solo.cfg:613
-msgid "<span color='yellow'>+$kill_gold gold</span>"
-msgstr "<span color='yellow'>+$kill_gold d'or</span>"
 
 #. [message], speaker=narrator
 #: Tower_Defense/scenarios/coop.cfg:976 Tower_Defense/scenarios/solo.cfg:621
@@ -242,10 +455,10 @@ msgid ""
 "    - Difficulty: Starting Gold: 60, Kill Gold: 2 , Number of waves: 10, "
 "Gold Increase: 80, XP increase: 10"
 msgstr ""
-"Tower Defense classique en mode coopératif adapté à Wesnoth. Recrute"
-"des unités, place les sur les cases, elles se battent contre des vagues"
-"d'ennemis, chaque ennemi tué rapporte de l'or, chaque ennemi non-tué"
-"attaquera ton cristal une fois. Essaye de faire survivre ton cristal"
+"Tower Defense classique en mode coopératif adapté à Wesnoth. Recrutez "
+"des unités, placez les sur les cases, elles se battent contre des vagues "
+"d'ennemis, chaque ennemi tué rapporte de l'or, chaque ennemi non-tué "
+"attaquera votre cristal une fois. Essayez de faire survivre votre cristal "
 "le plus longtemps possible, si possible jusqu'à la fin des vagues.\n"
 "\n"
 "Paramètres recommandés :\n"
@@ -266,15 +479,56 @@ msgstr "Joueur"
 msgid "Towers"
 msgstr "Tours"
 
-#. [objective], condition=lose
-#: Tower_Defense/scenarios/solo.cfg:239 Tower_Defense/scenarios/solo.cfg:524
-msgid "Destruction of the crystal"
-msgstr "Destruction du cristal"
+#. [multiplayer], id=tower_defense_vs
+#: Tower_Defense/scenarios/versus.cfg:3
+msgid "Tower Defense Versus"
+msgstr "Tower Defense Duel"
+
+#. [multiplayer], id=tower_defense_vs
+#: Tower_Defense/scenarios/versus.cfg:5
+msgid ""
+"Versus Tower Defense adapted to Wesnoth. Recruit units, place them on hexes, "
+"they fight against waves of enemies, each enemy unit killed gives you gold "
+"and is placed on your opponent's map, each unkilled enemy will attack your "
+"crystal once. Try to have your crystal to stand longer as the one of your "
+"opponent.\n"
+"\n"
+"Recommanded parameters:\n"
+"    - Long: Starting Gold: 100, Kill Gold: 4, Enemy gold: 50, XP increase: "
+"6\n"
+"    - Normal: Starting Gold: 80, Kill Gold: 3, Enemy Gold: 60, XP increase: "
+"8\n"
+"    - Quick: Starting Gold: 60, Kill Gold: 2, Enemy Gold: 80, XP increase: 10"
+msgstr ""
+"Tower Defense en duel adapté à Wesnoth. Recrutez des unités, "
+"placez les sur les cases, elles se battent contre des vagues d'ennemis "
+"chaque ennemi tué rapporte de l'or et est placé sur la carte de votre "
+"adversaire, chaque ennemi non-tué attaquera votre cristal une fois. "
+"Essayez de faire survivre votre cristal plus longtemps que celui de votre adversaire\n"
+"\n"
+"Paramètres recommandés\n"
+"    - Long : Or de départ : 100, Or par tué : 4, Or ennemi : 50, Incrément d'XP : 6\n"
+"    - Normal: Or de départ : 80, Or par tué : 3, Or ennemi : 60, Incrément d'XP : 8\n"
+"    - Rapide: Or de départ : 60, Or par tué : 2, Or ennemi : 80, Incrément d'XP : 10"
+
+#. [slider], id=gold_increase
+#: Tower_Defense/scenarios/versus.cfg:36
+msgid "Enemy Gold"
+msgstr "Or ennemi"
+
+#. [slider], id=gold_increase
+#: Tower_Defense/scenarios/versus.cfg:37
+msgid "Enemy Starting Gold"
+msgstr "Or de départ de l'ennemi"
 
 #. [message], speaker=narrator
-#: Tower_Defense/scenarios/solo.cfg:293
-msgid "If your crystal is destroyed, you lose."
-msgstr "Si votre cristal est détruit, vous avez perdu."
+#: Tower_Defense/scenarios/versus.cfg:391
+msgid ""
+"Each unit a tower kills will grant you gold. The killed unit will also be "
+"placed on your opponent's map."
+msgstr ""
+"Chaque unité qu'une tour tue vous rapporte de l'or. L'unité tué sera également "
+"placée sur la carte de votre adversaire."
 
 #. [unit_type], id=Tower TD, race=mechanical
 #: Tower_Defense/units/Tower.cfg:4
