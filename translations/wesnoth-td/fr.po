@@ -396,7 +396,7 @@ msgstr "Ennemis"
 #: Tower_Defense/scenarios/solo.cfg:235 Tower_Defense/scenarios/solo.cfg:520
 msgid "Survive for as long as possible. Next wave in $wave_turn| turns."
 msgstr ""
-"Survivez aussi longtemps que possible. Prochaine vague dans $wave_turn| tours."
+"Survivre aussi longtemps que possible. Prochaine vague dans $wave_turn| tours."
 
 #. [objective], condition=lose
 #: Tower_Defense/scenarios/coop.cfg:458 Tower_Defense/scenarios/coop.cfg:872
@@ -429,9 +429,9 @@ msgstr "Félicitations! Vous avez survécu aux $max_waves vagues!"
 
 #. [message], speaker=narrator
 #: Tower_Defense/scenarios/coop.cfg:976 Tower_Defense/scenarios/solo.cfg:621
-msgid "You survived $($wave_number-1) waves. Do better next time."
+msgid "You survived $($wave_number-2) waves. Do better next time."
 msgstr ""
-"Vous avez survécu à $($wave_number-1) vagues. Faites mieux la prochaine fois."
+"Vous avez survécu à $($wave_number-2) vagues. Faites mieux la prochaine fois."
 
 #. [multiplayer], id=tower_defense
 #: Tower_Defense/scenarios/solo.cfg:3
