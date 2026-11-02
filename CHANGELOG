@@ -17,3 +17,6 @@ Enemies now get stronger each wave
 Tower Defense parameters are now adjustable in the lobby
 Selling a tower now asks for confirmation
 Add three versus mode
+
+4.1
+Fix the scenario not working anymore in latest 1.19 versions
